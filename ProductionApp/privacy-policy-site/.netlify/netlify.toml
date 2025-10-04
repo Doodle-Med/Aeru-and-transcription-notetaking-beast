@@ -1,0 +1,27 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/johnsnow/01_Whisper_Repo/ProductionApp/privacy-policy-site"
+publishOrigin = "config"
+base = "/Users/johnsnow/01_Whisper_Repo/ProductionApp/privacy-policy-site"
+
+[build.environment]
+NODE_VERSION = "18"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]

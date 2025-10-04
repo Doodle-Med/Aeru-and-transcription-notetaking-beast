@@ -1,0 +1,115 @@
+# Xcode
+.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+DerivedData/
+.idea/
+*.hmap
+*.xccheckout
+*.xcworkspace
+!default.xcworkspace
+
+# CocoaPods
+Pods/
+*.podspec
+
+# Carthage
+Carthage/Build/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+iOSInjectionProject/
+
+# Provisioning Profiles
+*.mobileprovision
+*.provisionprofile
+
+# Keys and Secrets
+*.pem
+*.p12
+*.key
+*secret*
+*token*
+*api_key*
+*.env
+.env*
+
+# Backup files
+*.backup
+*_backup
+Backups_Archive/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.xcarchive
+
+# Large CoreML Model Files
+*.bin
+**/Models/**/*.bin
+**/Models/**/*.mlmodelc
+**/Models/**/weights/
+
+# Provisioning Profiles and Certificates
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+
+# Test results
+TestResults/

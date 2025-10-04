@@ -1,0 +1,1102 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E7572B3E8B49DC76B9382A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49BAB54F1A24E6BE807ED /* OnboardingView.swift */; };
+		03F2CC3EAFBB72518B7E5A6B /* AutomationDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B9883D2121E9F0714ADAF /* AutomationDriver.swift */; };
+		05BD47B1AC0AD53232176A7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE986006D4B985103EBD08E4 /* Foundation.framework */; };
+		0681EED5CFB95BA59EFB8BDC /* WhisperControlMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A817CF8DE5D0983280A932 /* WhisperControlMobileTests.swift */; };
+		07A673CFDAAE87A55E813197 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE986006D4B985103EBD08E4 /* Foundation.framework */; };
+		0C03191780C74EDF89E8F366 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78265F3946E71E61420DF3AE /* SettingsView.swift */; };
+		15F04843F40A47198BC9D9CC /* NotifyToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA9510501DC1DBAC7EEE9C /* NotifyToastManager.swift */; };
+		165393D73CC94FD3AC12F2D7 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F7090D31F8F8B80670439A /* StorageManager.swift */; };
+		1B5216B442370ECB03D6922B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99AD26D85FDE22E7059607C /* LaunchScreen.storyboard */; };
+		1C0104E1D276450B81E752F6 /* TranscriptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1F871934941B9C8C894EE /* TranscriptDetailView.swift */; };
+		1D051E09E92E4EDA8C96C15E /* AudioRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5381FB7AA20F0879EEEDF70 /* AudioRecorderView.swift */; };
+		21B187ACB98D5B2E0ECA019F /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = B719392F38670E38CBBFC661 /* WhisperKit */; };
+		21E4897CC2A541CFB3693B01 /* AnalyticsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7080165FFDC160E5F2D79FA /* AnalyticsPanel.swift */; };
+		245CB9BFBEF0432F92FE0A5D /* Color+Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39212D9D3E5C6DE1C2FC8DD6 /* Color+Platform.swift */; };
+		25034F64A1BC41458CFCC862 /* AudioProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC1B2C35A4807DE12B7F82 /* AudioProcessing.swift */; };
+		2647BD637895350D5254D177 /* Config_Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7EB06CBE5D4B3F56CB4C53D /* Config_Info.plist */; };
+		303CB84DF5AC3F3FE20774DB /* ChunkedUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436D208E9FBB8037A392851 /* ChunkedUploader.swift */; };
+		34B90497B54E5ACAE95994CF /* AnalyticsTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC14BD859168CDB138517CA /* AnalyticsTrackerTests.swift */; };
+		35C6D12B30F24F6EA2A3C598 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789394B003549B22BC05D5DF /* MainTabView.swift */; };
+		41BC144FB96A4649AD76B5AB /* ExportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68009A897134E616082B9E1 /* ExportCoordinator.swift */; };
+		469EE68AAEE5CB7372CD3D95 /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026176953EBEF16B94CF6AA /* DiagnosticsView.swift */; };
+		4806C03F5E5742E707804E9A /* NotifyToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CA9510501DC1DBAC7EEE9C /* NotifyToastManager.swift */; };
+		58919CE6C21E7498CFA73EBD /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F7090D31F8F8B80670439A /* StorageManager.swift */; };
+		5AE9490D2E8F6FED00A24091 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = AA11BB22CC33DD44EE55FF68 /* SQLite */; };
+		5AE9490E2E8F6FED00A24091 /* SVDB in Frameworks */ = {isa = PBXBuildFile; productRef = AA11BB22CC33DD44EE55FF69 /* SVDB */; };
+		5AE9490F2E8F6FED00A24091 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = AA11BB22CC33DD44EE55FF70 /* SwiftSoup */; };
+		5AE949102E8F6FED00A24091 /* MarkdownUI in Frameworks */ = {isa = PBXBuildFile; productRef = AA11BB22CC33DD44EE55FF71 /* MarkdownUI */; };
+		5AE949112E8F6FED00A24091 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = AA11BB22CC33DD44EE55FF68 /* SQLite */; };
+		5AE949122E8F6FED00A24091 /* SVDB in Frameworks */ = {isa = PBXBuildFile; productRef = AA11BB22CC33DD44EE55FF69 /* SVDB */; };
+		5F02733FA0A54E7EBEE0AB03 /* TranscriptionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81878FDF9AB8BA1538F9B6A /* TranscriptionEngine.swift */; };
+		6014593630500DE1789D2625 /* HelpSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E391D750377A735ED0F249 /* HelpSheet.swift */; };
+		625BB39809E743CC84A4D9D3 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F7685107D80AF1F0E661E /* HapticGenerator.swift */; };
+		648200E2BE11196E181C10CE /* UIApplication+TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517102537A4EC866EBBEF43 /* UIApplication+TopController.swift */; };
+		665E1D16F6A65636BE0C7E90 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789394B003549B22BC05D5DF /* MainTabView.swift */; };
+		66F7C64220D364057728B1F6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78265F3946E71E61420DF3AE /* SettingsView.swift */; };
+		6AED5AFBF5F210E070D4B8B4 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6F6A2AA0F202F96E4FE80 /* AudioRecorder.swift */; };
+		6BC401E3504E4C7F9F912C73 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13297D37B153F4411D72B5A /* AppSettings.swift */; };
+		7389CB200210A610919FDF85 /* WhisperControlMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD89650F09AA1DAC1FF95B96 /* WhisperControlMobileApp.swift */; };
+		76E49B64FE5BD10C0107FFBA /* JobStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B5DFE440932AC3BA9B6BD /* JobStore.swift */; };
+		79DB359EEBF34A5E0B80C127 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60F7685107D80AF1F0E661E /* HapticGenerator.swift */; };
+		829AAFE69CC10BC03AF9BE8A /* TranscriptionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81878FDF9AB8BA1538F9B6A /* TranscriptionEngine.swift */; };
+		849CA51A44692BB20A0CBCD6 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13297D37B153F4411D72B5A /* AppSettings.swift */; };
+		88031FE928BB6DA5B8B36997 /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F5BB4AF12B6A82309F3A2 /* QueueView.swift */; };
+		88031FE928BB6DA5B8B36998 /* LiveTranscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F5BB4AF12B6A82309F3A3 /* LiveTranscriptionView.swift */; };
+		8A6F0467306F98F7CFF43F11 /* ModelDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BF53BCF26DB41D90E251B /* ModelDownloadManager.swift */; };
+		8A9F225B611842D89B8CEBD5 /* JobManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88D7EB064758635760D46C /* JobManager.swift */; };
+		92EF80C37A374D0AB9DA922F /* QueueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293F5BB4AF12B6A82309F3A2 /* QueueView.swift */; };
+		93248C8FE6794E39909B2B2A /* ModelDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BF53BCF26DB41D90E251B /* ModelDownloadManager.swift */; };
+		93EA655E938AF2E00756B54F /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = B719392F38670E38CBBFC661 /* WhisperKit */; };
+		946F21CA6E87E07A2DFB5652 /* JobManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B88D7EB064758635760D46C /* JobManager.swift */; };
+		96244738433A401D801A08B3 /* DiagnosticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D026176953EBEF16B94CF6AA /* DiagnosticsView.swift */; };
+		9C8809247499AD94AAEE92F2 /* Color+Platform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39212D9D3E5C6DE1C2FC8DD6 /* Color+Platform.swift */; };
+		9E0279724A50C0CD947DD2DA /* AnalyticsPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7080165FFDC160E5F2D79FA /* AnalyticsPanel.swift */; };
+		9EB18E396F404BE78C2D4EBA /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A6F6A2AA0F202F96E4FE80 /* AudioRecorder.swift */; };
+		A1438ACDFE0FA58B78CADB30 /* AutomationDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B9883D2121E9F0714ADAF /* AutomationDriver.swift */; };
+		A1A1A1A1A1A1A1A1A1A1A1A2 /* AudioPlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1A1A1A1A1A1A1A1A1A1A1 /* AudioPlaybackService.swift */; };
+		A1A1A1A1A1A1A1A1A1A1A1A3 /* AudioPlaybackService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A1A1A1A1A1A1A1A1A1A1A1 /* AudioPlaybackService.swift */; };
+		A1A2A3A4A5A60718293A4A5A /* AppleStreamingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C4D5E6F70819204B3C4E /* AppleStreamingEngine.swift */; };
+		A1A2A3A4A5A60718293A4A5B /* AppleStreamingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B3C4D5E6F70819204B3C4E /* AppleStreamingEngine.swift */; };
+		A495F88CB7FE4AE6B0C0B66D /* JobStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B5DFE440932AC3BA9B6BD /* JobStore.swift */; };
+		A5A5A5BA1A0278690E171F82 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 947D737D5FB0965049B1CB95 /* Collections */; };
+		A66FCBB070D4DD2506C22C61 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2FAD875C119812D0C7F90F /* ZIPFoundation */; };
+		A687136997634F51B7F2B0ED /* HelpSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E391D750377A735ED0F249 /* HelpSheet.swift */; };
+		AA55BB66CC77DD88EE99FF00 /* ReplayKitCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC77DD88EE99FF00AA55 /* ReplayKitCaptureService.swift */; };
+		AA55BB66CC77DD88EE99FF01 /* ReplayKitCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB66CC77DD88EE99FF00AA55 /* ReplayKitCaptureService.swift */; };
+		AEAEBE01C0DECAFE00000002 /* AeruContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAEBE01C0DECAFE00000001 /* AeruContainerView.swift */; };
+		B0D93BA18C784AA6B691796A /* UIApplication+TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0517102537A4EC866EBBEF43 /* UIApplication+TopController.swift */; };
+		B1B2B3B4B5B60718293B4B5B /* LiveTranscriptionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D5E6F7A80920315C4D5F /* LiveTranscriptionSession.swift */; };
+		B1B2B3B4B5B60718293B4B5C /* LiveTranscriptionSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4D5E6F7A80920315C4D5F /* LiveTranscriptionSession.swift */; };
+		B1C2D3E4F5A60718293B4C5D /* LiveTranscriptionBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8B7C6D5E4F30291A0B1C2D /* LiveTranscriptionBackend.swift */; };
+		B1C2D3E4F5A60718293B4C5E /* LiveTranscriptionBackend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8B7C6D5E4F30291A0B1C2D /* LiveTranscriptionBackend.swift */; };
+		BA4F77B47411446CBA5EDF13 /* JobModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA68383E847931ECC4B24 /* JobModels.swift */; };
+		BC9E45A230FF676A42AF4C0D /* ExportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68009A897134E616082B9E1 /* ExportCoordinator.swift */; };
+		BCBD303E229F8DC53237DBA7 /* ModelManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E2510CA4C7E5EBE6D124A4 /* ModelManifest.swift */; };
+		BF6069ED0E65F8D07F8BBA16 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 947D737D5FB0965049B1CB95 /* Collections */; };
+		C0FFEEC0DE00FACEBEEF0001 /* CaptureStatusCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEEC0DE00FACEBEEF0000 /* CaptureStatusCenter.swift */; };
+		C0FFEEC0DE00FACEBEEF0002 /* CaptureStatusCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEEC0DE00FACEBEEF0000 /* CaptureStatusCenter.swift */; };
+		C1C2C3C4C5C60718293C4C5C /* AudioLiveCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90A31426D5E6A /* AudioLiveCapture.swift */; };
+		C1C2C3C4C5C60718293C4C5D /* AudioLiveCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D5E6F7A8B90A31426D5E6A /* AudioLiveCapture.swift */; };
+		C8E2F55C7AF0478E30511E23 /* PrivacySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B45DCC60444865829DA4B2 /* PrivacySheet.swift */; };
+		C9DEA4E095EFFB75ABC98ADE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32FEEAF5A269B74A49721082 /* Assets.xcassets */; };
+		CF9AF1FEC39A1B125FCC9A60 /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463DAD2AC25E6E7AB648A3C8 /* AnalyticsTracker.swift */; };
+		D0A0B0C0D0E0F00123456780 /* AppGroupConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789AB /* AppGroupConstants.swift */; };
+		D0A0B0C0D0E0F00123456781 /* BroadcastTranscriptStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789AC /* BroadcastTranscriptStore.swift */; };
+		D0A0B0C0D0E0F00123456782 /* BroadcastLiveTranscriptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789AD /* BroadcastLiveTranscriptView.swift */; };
+		D0A0B0C0D0E0F00123456783 /* LocalRAGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789AE /* LocalRAGService.swift */; };
+		D0A0B0C0D0E0F00123456784 /* DatabaseManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789AF /* DatabaseManagementView.swift */; };
+		D0A0B0C0D0E0F00123456785 /* AeruRAGAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B0 /* AeruRAGAdapter.swift */; };
+		A988D80EC7763469E8B0E1F9 /* AeruRAGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A988D80EC7763469E8B0E1F8 /* AeruRAGModel.swift */; };
+		A424E42927AFD469C81B4DC4 /* AeruDocumentProcessorNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424E42927AFD469C81B4DC3 /* AeruDocumentProcessorNew.swift */; };
+		A424E42927AFD469C81B4DC5 /* EnhancedDocumentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A424E42927AFD469C81B4DC6 /* EnhancedDocumentProcessor.swift */; };
+		A80728D14284C407A98E88E6 /* ContextWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80728D14284C407A98E88E5 /* ContextWindowManager.swift */; };
+		AD3E616E27FEE4DF4967A46A /* AeruLLMIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3E616E27FEE4DF4967A46B /* AeruLLMIntegration.swift */; };
+		D0A0B0C0D0E0F00123456786 /* DocumentProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B1 /* DocumentProcessor.swift */; };
+		D0A0B0C0D0E0F00123456787 /* RAGStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B2 /* RAGStatsView.swift */; };
+		D0A0B0C0D0E0F00123456788 /* AeruView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B3 /* AeruView.swift */; };
+		D0A0B0C0D0E0F00123456789 /* ChatSidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B4 /* ChatSidebar.swift */; };
+		D0A0B0C0D0E0F00123456790 /* DynamicLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B5 /* DynamicLogoView.swift */; };
+		D0A0B0C0D0E0F00123456791 /* VoiceConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B6 /* VoiceConversationView.swift */; };
+		D0A0B0C0D0E0F00123456793 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B8 /* ChatMessage.swift */; };
+		D0A0B0C0D0E0F00123456794 /* ChatSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789B9 /* ChatSession.swift */; };
+		D0A0B0C0D0E0F00123456795 /* NetworkConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789BA /* NetworkConnectivity.swift */; };
+		D0A0B0C0D0E0F00123456796 /* SpeechRecognitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789BB /* SpeechRecognitionManager.swift */; };
+		D0A0B0C0D0E0F00123456797 /* TextToSpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789BC /* TextToSpeechManager.swift */; };
+		D0A0B0C0D0E0F00123456798 /* WebSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789BD /* WebSearchService.swift */; };
+		D0A0B0C0D0E0F00123456799 /* AppColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789BE /* AppColorScheme.swift */; };
+		D0A0B0C0D0E0F00123456801 /* APIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789C0 /* APIServiceManager.swift */; };
+		D0A0B0C0D0E0F00123456802 /* APISettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789C1 /* APISettingsView.swift */; };
+		D0A0B0C0D0E0F00123456803 /* RAGDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789C2 /* RAGDatabaseManager.swift */; };
+		D0A0B0C0D0E0F00123456804 /* RAGManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789C3 /* RAGManagementView.swift */; };
+		D0A0B0C0D0E0F00123456805 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789C4 /* DatabaseManager.swift */; };
+		D0A0B0C0D0E0F00123456806 /* RAGModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B0C0D0E0F00123456789C5 /* RAGModel.swift */; };
+		D1D2D3D4D5D60718293D4D5D /* StreamingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4F5A6B7C80A21537E6F7B /* StreamingEngine.swift */; };
+		D1D2D3D4D5D60718293D4D5E /* StreamingEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E4F5A6B7C80A21537E6F7B /* StreamingEngine.swift */; };
+		D1E2F3A4B5C60718293D4E5F /* LiveTranscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D2E3F4A5B60718293C4D5E /* LiveTranscriptionManager.swift */; };
+		D1E2F3A4B5C60718293D4E60 /* LiveTranscriptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D2E3F4A5B60718293C4D5E /* LiveTranscriptionManager.swift */; };
+		D2AEEF5F5B2EF9D43FDBD4A5 /* TranscriptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD1F871934941B9C8C894EE /* TranscriptDetailView.swift */; };
+		D49A85380EF641B45A0AEB39 /* JobManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBBEE435E35C49DB7339838 /* JobManagerTests.swift */; };
+		D567DE10B24B41C499311B55 /* ChunkedUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8436D208E9FBB8037A392851 /* ChunkedUploader.swift */; };
+		D5FDBFCCBCB54FD89C06482B /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFB1BBCE34E0EA36A97326 /* ExportService.swift */; };
+		E13015D3D69A91F30ED394E5 /* ExportServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227BF02D4B562D3DCECF0D56 /* ExportServiceTests.swift */; };
+		E1D6A24BBB60FFDCED612156 /* AudioProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDC1B2C35A4807DE12B7F82 /* AudioProcessing.swift */; };
+		E41C0459C3FEE87594EDA50B /* AudioRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5381FB7AA20F0879EEEDF70 /* AudioRecorderView.swift */; };
+		E4A3B920A5964CC58772ECCE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49BAB54F1A24E6BE807ED /* OnboardingView.swift */; };
+		E5602CE9971191F5227C3D80 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFB1BBCE34E0EA36A97326 /* ExportService.swift */; };
+		EB59B3BCA9814D12AE0C6A82 /* ModelManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E2510CA4C7E5EBE6D124A4 /* ModelManifest.swift */; };
+		EF09342666D2BCDED993C7C2 /* JobModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DDA68383E847931ECC4B24 /* JobModels.swift */; };
+		F1A2B3C4D5E60718293F4A5B /* StreamingDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2A3B4C5D60718293E4F5A /* StreamingDelegateProxy.swift */; };
+		F1A2B3C4D5E60718293F4A5C /* StreamingDelegateProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F2A3B4C5D60718293E4F5A /* StreamingDelegateProxy.swift */; };
+		F7F3A4B9651343DDAB321B60 /* PrivacySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B45DCC60444865829DA4B2 /* PrivacySheet.swift */; };
+		FA9C2736984E484CB5FD35CC /* AnalyticsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463DAD2AC25E6E7AB648A3C8 /* AnalyticsTracker.swift */; };
+		FDB68C984874F82011A71997 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 0D2FAD875C119812D0C7F90F /* ZIPFoundation */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		923B078093A429022E86CA79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CA84A72D873440071B0E62A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ABB7E8D8C60564765881679;
+			remoteInfo = WhisperControlMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		036451353E584CBD79AB833F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
+		0517102537A4EC866EBBEF43 /* UIApplication+TopController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIApplication+TopController.swift"; path = "Sources/WhisperControlMobile/Services/UIApplication+TopController.swift"; sourceTree = "<group>"; };
+		06FFB1BBCE34E0EA36A97326 /* ExportService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExportService.swift; path = Sources/WhisperControlMobile/Services/ExportService.swift; sourceTree = "<group>"; };
+		0DBBEE435E35C49DB7339838 /* JobManagerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JobManagerTests.swift; path = Tests/WhisperControlMobileTests/JobManagerTests.swift; sourceTree = "<group>"; };
+		11CA9510501DC1DBAC7EEE9C /* NotifyToastManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotifyToastManager.swift; path = Sources/WhisperControlMobile/Services/NotifyToastManager.swift; sourceTree = "<group>"; };
+		1F0B5DFE440932AC3BA9B6BD /* JobStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JobStore.swift; path = Sources/WhisperControlMobile/Core/JobStore.swift; sourceTree = "<group>"; };
+		227BF02D4B562D3DCECF0D56 /* ExportServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExportServiceTests.swift; path = Tests/WhisperControlMobileTests/ExportServiceTests.swift; sourceTree = "<group>"; };
+		293F5BB4AF12B6A82309F3A2 /* QueueView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueueView.swift; path = Sources/WhisperControlMobile/UI/QueueView.swift; sourceTree = "<group>"; };
+		293F5BB4AF12B6A82309F3A3 /* LiveTranscriptionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveTranscriptionView.swift; path = Sources/WhisperControlMobile/UI/LiveTranscriptionView.swift; sourceTree = "<group>"; };
+		32FEEAF5A269B74A49721082 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = App/Assets.xcassets; sourceTree = "<group>"; };
+		39212D9D3E5C6DE1C2FC8DD6 /* Color+Platform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Color+Platform.swift"; path = "Sources/WhisperControlMobile/Util/Color+Platform.swift"; sourceTree = "<group>"; };
+		463DAD2AC25E6E7AB648A3C8 /* AnalyticsTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalyticsTracker.swift; path = Sources/WhisperControlMobile/Services/AnalyticsTracker.swift; sourceTree = "<group>"; };
+		4D0B9883D2121E9F0714ADAF /* AutomationDriver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutomationDriver.swift; path = Sources/WhisperControlMobile/Services/AutomationDriver.swift; sourceTree = "<group>"; };
+		4FE4D02021BAECDE360B9800 /* WhisperControlMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhisperControlMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A817CF8DE5D0983280A932 /* WhisperControlMobileTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperControlMobileTests.swift; path = Tests/WhisperControlMobileTests/WhisperControlMobileTests.swift; sourceTree = "<group>"; };
+		61E2510CA4C7E5EBE6D124A4 /* ModelManifest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelManifest.swift; path = Sources/WhisperControlMobile/Core/ModelManifest.swift; sourceTree = "<group>"; };
+		63DDA68383E847931ECC4B24 /* JobModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JobModels.swift; path = Sources/WhisperControlMobile/Core/JobModels.swift; sourceTree = "<group>"; };
+		74F49BAB54F1A24E6BE807ED /* OnboardingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OnboardingView.swift; path = Sources/WhisperControlMobile/UI/OnboardingView.swift; sourceTree = "<group>"; };
+		78265F3946E71E61420DF3AE /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Sources/WhisperControlMobile/UI/SettingsView.swift; sourceTree = "<group>"; };
+		789394B003549B22BC05D5DF /* MainTabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MainTabView.swift; path = Sources/WhisperControlMobile/UI/MainTabView.swift; sourceTree = "<group>"; };
+		7B88D7EB064758635760D46C /* JobManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JobManager.swift; path = Sources/WhisperControlMobile/Services/JobManager.swift; sourceTree = "<group>"; };
+		8436D208E9FBB8037A392851 /* ChunkedUploader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChunkedUploader.swift; path = Sources/WhisperControlMobile/Services/ChunkedUploader.swift; sourceTree = "<group>"; };
+		8AD1F871934941B9C8C894EE /* TranscriptDetailView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranscriptDetailView.swift; path = Sources/WhisperControlMobile/UI/TranscriptDetailView.swift; sourceTree = "<group>"; };
+		8D34B452F3D0A7A80B0C9DF2 /* openai_whisper-tiny.en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "openai_whisper-tiny.en"; path = "App/Models/openai_whisper-tiny.en"; sourceTree = "<group>"; };
+		9A8B7C6D5E4F30291A0B1C2D /* LiveTranscriptionBackend.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveTranscriptionBackend.swift; path = Sources/WhisperControlMobile/Core/LiveTranscriptionBackend.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789AB /* AppGroupConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppGroupConstants.swift; path = Sources/WhisperControlMobile/Core/AppGroupConstants.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789AC /* BroadcastTranscriptStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BroadcastTranscriptStore.swift; path = Sources/WhisperControlMobile/Services/BroadcastTranscriptStore.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789AD /* BroadcastLiveTranscriptView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BroadcastLiveTranscriptView.swift; path = Sources/WhisperControlMobile/UI/BroadcastLiveTranscriptView.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789AE /* LocalRAGService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalRAGService.swift; path = Sources/WhisperControlMobile/Services/LocalRAGService.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789AF /* DatabaseManagementView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseManagementView.swift; path = Sources/WhisperControlMobile/UI/DatabaseManagementView.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B0 /* AeruRAGAdapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AeruRAGAdapter.swift; path = Sources/WhisperControlMobile/Services/AeruRAGAdapter.swift; sourceTree = "<group>"; };
+		A988D80EC7763469E8B0E1F8 /* AeruRAGModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AeruRAGModel.swift; path = Sources/WhisperControlMobile/Services/AeruRAGModel.swift; sourceTree = "<group>"; };
+		A424E42927AFD469C81B4DC3 /* AeruDocumentProcessorNew.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AeruDocumentProcessorNew.swift; path = Sources/WhisperControlMobile/Services/AeruDocumentProcessorNew.swift; sourceTree = "<group>"; };
+		A424E42927AFD469C81B4DC6 /* EnhancedDocumentProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnhancedDocumentProcessor.swift; path = Sources/WhisperControlMobile/Services/EnhancedDocumentProcessor.swift; sourceTree = "<group>"; };
+		A80728D14284C407A98E88E5 /* ContextWindowManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextWindowManager.swift; path = Sources/WhisperControlMobile/Services/ContextWindowManager.swift; sourceTree = "<group>"; };
+		AD3E616E27FEE4DF4967A46B /* AeruLLMIntegration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AeruLLMIntegration.swift; path = Sources/WhisperControlMobile/Services/AeruLLMIntegration.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B1 /* DocumentProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentProcessor.swift; path = Sources/WhisperControlMobile/Services/DocumentProcessor.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B2 /* RAGStatsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAGStatsView.swift; path = Sources/WhisperControlMobile/UI/RAGStatsView.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B3 /* AeruView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AeruView.swift; path = "Aeru-main/Aeru/View/AeruView.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B4 /* ChatSidebar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatSidebar.swift; path = "Aeru-main/Aeru/View/ChatSidebar.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B5 /* DynamicLogoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicLogoView.swift; path = "Aeru-main/Aeru/View/DynamicLogoView.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B6 /* VoiceConversationView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VoiceConversationView.swift; path = "Aeru-main/Aeru/View/VoiceConversationView.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B8 /* ChatMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatMessage.swift; path = "Aeru-main/Aeru/Model/ChatMessage.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789B9 /* ChatSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatSession.swift; path = "Aeru-main/Aeru/Model/ChatSession.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789BA /* NetworkConnectivity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkConnectivity.swift; path = "Aeru-main/Aeru/Model/NetworkConnectivity.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789BB /* SpeechRecognitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionManager.swift; path = "Aeru-main/Aeru/Model/SpeechRecognitionManager.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789BC /* TextToSpeechManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextToSpeechManager.swift; path = "Aeru-main/Aeru/Model/TextToSpeechManager.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789BD /* WebSearchService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSearchService.swift; path = "Aeru-main/Aeru/Model/WebSearchService.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789BE /* AppColorScheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppColorScheme.swift; path = Sources/WhisperControlMobile/UI/AppColorScheme.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789C0 /* APIServiceManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIServiceManager.swift; path = Sources/WhisperControlMobile/Services/APIServiceManager.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789C1 /* APISettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APISettingsView.swift; path = Sources/WhisperControlMobile/UI/APISettingsView.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789C2 /* RAGDatabaseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAGDatabaseManager.swift; path = Sources/WhisperControlMobile/Services/RAGDatabaseManager.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789C3 /* RAGManagementView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAGManagementView.swift; path = Sources/WhisperControlMobile/UI/RAGManagementView.swift; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789C4 /* DatabaseManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = "Aeru-main/Aeru/Model/DatabaseManager.swift"; sourceTree = "<group>"; };
+		A0B0C0D0E0F00123456789C5 /* RAGModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RAGModel.swift; path = "Aeru-main/Aeru/Model/RAGModel.swift"; sourceTree = "<group>"; };
+		A1A1A1A1A1A1A1A1A1A1A1A1 /* AudioPlaybackService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioPlaybackService.swift; path = Sources/WhisperControlMobile/Services/AudioPlaybackService.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60718293A4B5C /* openai_whisper-small.en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "openai_whisper-small.en"; path = "App/Models/openai_whisper-small.en"; sourceTree = "<group>"; };
+		A2B3C4D5E6F70819204B3C4E /* AppleStreamingEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleStreamingEngine.swift; path = Sources/WhisperControlMobile/Services/AppleStreamingEngine.swift; sourceTree = "<group>"; };
+		A81878FDF9AB8BA1538F9B6A /* TranscriptionEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TranscriptionEngine.swift; path = Sources/WhisperControlMobile/Services/TranscriptionEngine.swift; sourceTree = "<group>"; };
+		AEAEBE01C0DECAFE00000001 /* AeruContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AeruContainerView.swift; path = Sources/WhisperControlMobile/UI/AeruContainerView.swift; sourceTree = "<group>"; };
+		B3B45DCC60444865829DA4B2 /* PrivacySheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivacySheet.swift; path = Sources/WhisperControlMobile/UI/PrivacySheet.swift; sourceTree = "<group>"; };
+		B3C4D5E6F7A80920315C4D5F /* LiveTranscriptionSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveTranscriptionSession.swift; path = Sources/WhisperControlMobile/Services/LiveTranscriptionSession.swift; sourceTree = "<group>"; };
+		B5E391D750377A735ED0F249 /* HelpSheet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HelpSheet.swift; path = Sources/WhisperControlMobile/UI/HelpSheet.swift; sourceTree = "<group>"; };
+		BB66CC77DD88EE99FF00AA55 /* ReplayKitCaptureService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplayKitCaptureService.swift; path = Sources/WhisperControlMobile/Services/ReplayKitCaptureService.swift; sourceTree = "<group>"; };
+		BD89650F09AA1DAC1FF95B96 /* WhisperControlMobileApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhisperControlMobileApp.swift; path = App/WhisperControlMobileApp.swift; sourceTree = "<group>"; };
+		BE986006D4B985103EBD08E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C0FFEEC0DE00FACEBEEF0000 /* CaptureStatusCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaptureStatusCenter.swift; path = Sources/WhisperControlMobile/Core/CaptureStatusCenter.swift; sourceTree = "<group>"; };
+		C1D2E3F4A5B60718293A4B5C /* openai_whisper-base.en */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "openai_whisper-base.en"; path = "App/Models/openai_whisper-base.en"; sourceTree = "<group>"; };
+		C1D2E3F4A5B60718293C4D5E /* LiveTranscriptionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LiveTranscriptionManager.swift; path = Sources/WhisperControlMobile/Services/LiveTranscriptionManager.swift; sourceTree = "<group>"; };
+		C4D5E6F7A8B90A31426D5E6A /* AudioLiveCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioLiveCapture.swift; path = Sources/WhisperControlMobile/Services/AudioLiveCapture.swift; sourceTree = "<group>"; };
+		C5381FB7AA20F0879EEEDF70 /* AudioRecorderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioRecorderView.swift; path = Sources/WhisperControlMobile/UI/AudioRecorderView.swift; sourceTree = "<group>"; };
+		C7080165FFDC160E5F2D79FA /* AnalyticsPanel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalyticsPanel.swift; path = Sources/WhisperControlMobile/UI/AnalyticsPanel.swift; sourceTree = "<group>"; };
+		C7EB06CBE5D4B3F56CB4C53D /* Config_Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Config_Info.plist; sourceTree = "<group>"; };
+		D026176953EBEF16B94CF6AA /* DiagnosticsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DiagnosticsView.swift; path = Sources/WhisperControlMobile/UI/DiagnosticsView.swift; sourceTree = "<group>"; };
+		D13297D37B153F4411D72B5A /* AppSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppSettings.swift; path = Sources/WhisperControlMobile/Core/AppSettings.swift; sourceTree = "<group>"; };
+		D3E4F5A6B7C80A21537E6F7B /* StreamingEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamingEngine.swift; path = Sources/WhisperControlMobile/Services/StreamingEngine.swift; sourceTree = "<group>"; };
+		D60F7685107D80AF1F0E661E /* HapticGenerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HapticGenerator.swift; path = Sources/WhisperControlMobile/Services/HapticGenerator.swift; sourceTree = "<group>"; };
+		D68009A897134E616082B9E1 /* ExportCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExportCoordinator.swift; path = Sources/WhisperControlMobile/Services/ExportCoordinator.swift; sourceTree = "<group>"; };
+		D99AD26D85FDE22E7059607C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = App/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0A807723B830980381C10CF /* WhisperControlMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhisperControlMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F2A3B4C5D60718293E4F5A /* StreamingDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StreamingDelegateProxy.swift; path = Sources/WhisperControlMobile/Services/StreamingDelegateProxy.swift; sourceTree = "<group>"; };
+		E3F7090D31F8F8B80670439A /* StorageManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageManager.swift; path = Sources/WhisperControlMobile/Services/StorageManager.swift; sourceTree = "<group>"; };
+		EDC14BD859168CDB138517CA /* AnalyticsTrackerTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnalyticsTrackerTests.swift; path = Tests/WhisperControlMobileTests/AnalyticsTrackerTests.swift; sourceTree = "<group>"; };
+		F4A6F6A2AA0F202F96E4FE80 /* AudioRecorder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioRecorder.swift; path = Sources/WhisperControlMobile/Services/AudioRecorder.swift; sourceTree = "<group>"; };
+		FB7BF53BCF26DB41D90E251B /* ModelDownloadManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelDownloadManager.swift; path = Sources/WhisperControlMobile/Services/ModelDownloadManager.swift; sourceTree = "<group>"; };
+		FFDC1B2C35A4807DE12B7F82 /* AudioProcessing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioProcessing.swift; path = Sources/WhisperControlMobile/Services/AudioProcessing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A043358C1B9D8F29C45827C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE949102E8F6FED00A24091 /* MarkdownUI in Frameworks */,
+				5AE9490F2E8F6FED00A24091 /* SwiftSoup in Frameworks */,
+				5AE9490E2E8F6FED00A24091 /* SVDB in Frameworks */,
+				5AE9490D2E8F6FED00A24091 /* SQLite in Frameworks */,
+				A5A5A5BA1A0278690E171F82 /* Collections in Frameworks */,
+				05BD47B1AC0AD53232176A7D /* Foundation.framework in Frameworks */,
+				21B187ACB98D5B2E0ECA019F /* WhisperKit in Frameworks */,
+				A66FCBB070D4DD2506C22C61 /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7AE4D462B65D763C8E523A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AE949112E8F6FED00A24091 /* SQLite in Frameworks */,
+				BF6069ED0E65F8D07F8BBA16 /* Collections in Frameworks */,
+				07A673CFDAAE87A55E813197 /* Foundation.framework in Frameworks */,
+				93EA655E938AF2E00756B54F /* WhisperKit in Frameworks */,
+				FDB68C984874F82011A71997 /* ZIPFoundation in Frameworks */,
+				5AE949122E8F6FED00A24091 /* SVDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0715CC69E042C28F3A4872D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BE986006D4B985103EBD08E4 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		10B2668257CB5BFBF9F74833 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				32FEEAF5A269B74A49721082 /* Assets.xcassets */,
+				8D34B452F3D0A7A80B0C9DF2 /* openai_whisper-tiny.en */,
+				A1B2C3D4E5F60718293A4B5C /* openai_whisper-small.en */,
+				C1D2E3F4A5B60718293A4B5C /* openai_whisper-base.en */,
+				D99AD26D85FDE22E7059607C /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4911B92C7CF08651910C4DAE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F413802D52B7DD9BFE28A517 /* Core */,
+				8E5B4AD59EEBD8D1131DB2B3 /* Services */,
+				B1D94911316FEB27763B1524 /* UI */,
+				AB702016A2DA6030AB332A04 /* Util */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		4FB93CD6BA7D036BA03F5F5F /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C7EB06CBE5D4B3F56CB4C53D /* Config_Info.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		5AE949132E8F6FED00A24091 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A0B0C0D0E0F00123456789AB /* AppGroupConstants.swift */,
+				A0B0C0D0E0F00123456789AD /* BroadcastLiveTranscriptView.swift */,
+				A0B0C0D0E0F00123456789C4 /* DatabaseManager.swift */,
+				A0B0C0D0E0F00123456789C5 /* RAGModel.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		71E9BA5CBB294C69DDBE13C9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				036451353E584CBD79AB833F /* Info.plist */,
+				D258BF936C76FA1420AF7212 /* WhisperControlMobileTests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		8E5B4AD59EEBD8D1131DB2B3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B9883D2121E9F0714ADAF /* AutomationDriver.swift */,
+				463DAD2AC25E6E7AB648A3C8 /* AnalyticsTracker.swift */,
+				A2B3C4D5E6F70819204B3C4E /* AppleStreamingEngine.swift */,
+				C4D5E6F7A8B90A31426D5E6A /* AudioLiveCapture.swift */,
+				A1A1A1A1A1A1A1A1A1A1A1A1 /* AudioPlaybackService.swift */,
+				FFDC1B2C35A4807DE12B7F82 /* AudioProcessing.swift */,
+				F4A6F6A2AA0F202F96E4FE80 /* AudioRecorder.swift */,
+				8436D208E9FBB8037A392851 /* ChunkedUploader.swift */,
+				D68009A897134E616082B9E1 /* ExportCoordinator.swift */,
+				06FFB1BBCE34E0EA36A97326 /* ExportService.swift */,
+				D60F7685107D80AF1F0E661E /* HapticGenerator.swift */,
+				7B88D7EB064758635760D46C /* JobManager.swift */,
+				C1D2E3F4A5B60718293C4D5E /* LiveTranscriptionManager.swift */,
+				B3C4D5E6F7A80920315C4D5F /* LiveTranscriptionSession.swift */,
+				FB7BF53BCF26DB41D90E251B /* ModelDownloadManager.swift */,
+				11CA9510501DC1DBAC7EEE9C /* NotifyToastManager.swift */,
+				E3F7090D31F8F8B80670439A /* StorageManager.swift */,
+				E1F2A3B4C5D60718293E4F5A /* StreamingDelegateProxy.swift */,
+				D3E4F5A6B7C80A21537E6F7B /* StreamingEngine.swift */,
+				A81878FDF9AB8BA1538F9B6A /* TranscriptionEngine.swift */,
+				0517102537A4EC866EBBEF43 /* UIApplication+TopController.swift */,
+				BB66CC77DD88EE99FF00AA55 /* ReplayKitCaptureService.swift */,
+				A0B0C0D0E0F00123456789AC /* BroadcastTranscriptStore.swift */,
+				A0B0C0D0E0F00123456789AE /* LocalRAGService.swift */,
+				A0B0C0D0E0F00123456789B0 /* AeruRAGAdapter.swift */,
+				A988D80EC7763469E8B0E1F8 /* AeruRAGModel.swift */,
+				A424E42927AFD469C81B4DC3 /* AeruDocumentProcessorNew.swift */,
+				A424E42927AFD469C81B4DC6 /* EnhancedDocumentProcessor.swift */,
+				A80728D14284C407A98E88E5 /* ContextWindowManager.swift */,
+				AD3E616E27FEE4DF4967A46B /* AeruLLMIntegration.swift */,
+				A0B0C0D0E0F00123456789B1 /* DocumentProcessor.swift */,
+				A0B0C0D0E0F00123456789B8 /* ChatMessage.swift */,
+				A0B0C0D0E0F00123456789B9 /* ChatSession.swift */,
+				A0B0C0D0E0F00123456789BA /* NetworkConnectivity.swift */,
+				A0B0C0D0E0F00123456789BB /* SpeechRecognitionManager.swift */,
+				A0B0C0D0E0F00123456789BC /* TextToSpeechManager.swift */,
+				A0B0C0D0E0F00123456789BD /* WebSearchService.swift */,
+				A0B0C0D0E0F00123456789C0 /* APIServiceManager.swift */,
+				A0B0C0D0E0F00123456789C2 /* RAGDatabaseManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		96F952AA1F8CD70F59E4CB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0715CC69E042C28F3A4872D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7211D0A14D40D6DB9C6D50B /* AppEntry */ = {
+			isa = PBXGroup;
+			children = (
+				BD89650F09AA1DAC1FF95B96 /* WhisperControlMobileApp.swift */,
+			);
+			name = AppEntry;
+			sourceTree = "<group>";
+		};
+		AB702016A2DA6030AB332A04 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				39212D9D3E5C6DE1C2FC8DD6 /* Color+Platform.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		B1D94911316FEB27763B1524 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C7080165FFDC160E5F2D79FA /* AnalyticsPanel.swift */,
+				C5381FB7AA20F0879EEEDF70 /* AudioRecorderView.swift */,
+				D026176953EBEF16B94CF6AA /* DiagnosticsView.swift */,
+				B5E391D750377A735ED0F249 /* HelpSheet.swift */,
+				789394B003549B22BC05D5DF /* MainTabView.swift */,
+				74F49BAB54F1A24E6BE807ED /* OnboardingView.swift */,
+				B3B45DCC60444865829DA4B2 /* PrivacySheet.swift */,
+				293F5BB4AF12B6A82309F3A2 /* QueueView.swift */,
+				293F5BB4AF12B6A82309F3A3 /* LiveTranscriptionView.swift */,
+				A0B0C0D0E0F00123456789AF /* DatabaseManagementView.swift */,
+				A0B0C0D0E0F00123456789B2 /* RAGStatsView.swift */,
+				A0B0C0D0E0F00123456789B3 /* AeruView.swift */,
+				A0B0C0D0E0F00123456789B4 /* ChatSidebar.swift */,
+				A0B0C0D0E0F00123456789B5 /* DynamicLogoView.swift */,
+				A0B0C0D0E0F00123456789B6 /* VoiceConversationView.swift */,
+				A0B0C0D0E0F00123456789BE /* AppColorScheme.swift */,
+				A0B0C0D0E0F00123456789C1 /* APISettingsView.swift */,
+				A0B0C0D0E0F00123456789C3 /* RAGManagementView.swift */,
+				78265F3946E71E61420DF3AE /* SettingsView.swift */,
+				8AD1F871934941B9C8C894EE /* TranscriptDetailView.swift */,
+				AEAEBE01C0DECAFE00000001 /* AeruContainerView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D258BF936C76FA1420AF7212 /* WhisperControlMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDC14BD859168CDB138517CA /* AnalyticsTrackerTests.swift */,
+				227BF02D4B562D3DCECF0D56 /* ExportServiceTests.swift */,
+				0DBBEE435E35C49DB7339838 /* JobManagerTests.swift */,
+				61A817CF8DE5D0983280A932 /* WhisperControlMobileTests.swift */,
+			);
+			name = WhisperControlMobileTests;
+			sourceTree = "<group>";
+		};
+		D9593BC1BCE389A0FBD73C90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FE4D02021BAECDE360B9800 /* WhisperControlMobile.app */,
+				E0A807723B830980381C10CF /* WhisperControlMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBDE1F6C9FFF12C6E41295A9 = {
+			isa = PBXGroup;
+			children = (
+				A7211D0A14D40D6DB9C6D50B /* AppEntry */,
+				4FB93CD6BA7D036BA03F5F5F /* Config */,
+				96F952AA1F8CD70F59E4CB59 /* Frameworks */,
+				D9593BC1BCE389A0FBD73C90 /* Products */,
+				10B2668257CB5BFBF9F74833 /* Resources */,
+				4911B92C7CF08651910C4DAE /* Sources */,
+				71E9BA5CBB294C69DDBE13C9 /* Tests */,
+				5AE949132E8F6FED00A24091 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		F413802D52B7DD9BFE28A517 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D13297D37B153F4411D72B5A /* AppSettings.swift */,
+				63DDA68383E847931ECC4B24 /* JobModels.swift */,
+				1F0B5DFE440932AC3BA9B6BD /* JobStore.swift */,
+				9A8B7C6D5E4F30291A0B1C2D /* LiveTranscriptionBackend.swift */,
+				61E2510CA4C7E5EBE6D124A4 /* ModelManifest.swift */,
+				C0FFEEC0DE00FACEBEEF0000 /* CaptureStatusCenter.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A0D485CF525674B3C61B5CC /* WhisperControlMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF1D2F206D18CD82FDA3EDB6 /* Build configuration list for PBXNativeTarget "WhisperControlMobileTests" */;
+			buildPhases = (
+				A0FB9194800E440241FC8FB5 /* Sources */,
+				B7AE4D462B65D763C8E523A0 /* Frameworks */,
+				A5F135D5D1E83C7EA6D93632 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071483FAF8B232D5E6A3024C /* PBXTargetDependency */,
+			);
+			name = WhisperControlMobileTests;
+			packageProductDependencies = (
+				947D737D5FB0965049B1CB95 /* Collections */,
+				B719392F38670E38CBBFC661 /* WhisperKit */,
+				0D2FAD875C119812D0C7F90F /* ZIPFoundation */,
+				AA11BB22CC33DD44EE55FF68 /* SQLite */,
+				AA11BB22CC33DD44EE55FF69 /* SVDB */,
+			);
+			productName = WhisperControlMobileTests;
+			productReference = E0A807723B830980381C10CF /* WhisperControlMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8ABB7E8D8C60564765881679 /* WhisperControlMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8EB28BC825BE803BB97EF0CD /* Build configuration list for PBXNativeTarget "WhisperControlMobile" */;
+			buildPhases = (
+				47DBA7AC0AFFB4696A288143 /* Sources */,
+				7A043358C1B9D8F29C45827C /* Frameworks */,
+				BFA61230383C40EE8607CACB /* Compile CoreML Models */,
+				56D3BEF29D3F7F8821E6B547 /* Embed XCTest Harness */,
+				2788A890BCACBA8CAD8C0CFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WhisperControlMobile;
+			packageProductDependencies = (
+				947D737D5FB0965049B1CB95 /* Collections */,
+				B719392F38670E38CBBFC661 /* WhisperKit */,
+				0D2FAD875C119812D0C7F90F /* ZIPFoundation */,
+				AA11BB22CC33DD44EE55FF68 /* SQLite */,
+				AA11BB22CC33DD44EE55FF69 /* SVDB */,
+				AA11BB22CC33DD44EE55FF70 /* SwiftSoup */,
+				AA11BB22CC33DD44EE55FF71 /* MarkdownUI */,
+			);
+			productName = WhisperControlMobile;
+			productReference = 4FE4D02021BAECDE360B9800 /* WhisperControlMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CA84A72D873440071B0E62A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = C11AE7089343479DD32230C6 /* Build configuration list for PBXProject "WhisperControlMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBDE1F6C9FFF12C6E41295A9;
+			packageReferences = (
+				2D2FA6ECEF21BC284F76B8DC /* XCRemoteSwiftPackageReference "swift-collections" */,
+				B69E6901BBE2A77EBED6BF0E /* XCRemoteSwiftPackageReference "WhisperKit" */,
+				2A870DED1A99FB858794B5C0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				AA11BB22CC33DD44EE55FF66 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+				AA11BB22CC33DD44EE55FF67 /* XCRemoteSwiftPackageReference "SVDB" */,
+				AA11BB22CC33DD44EE55FF72 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				AA11BB22CC33DD44EE55FF73 /* XCRemoteSwiftPackageReference "MarkdownUI" */,
+			);
+			productRefGroup = D9593BC1BCE389A0FBD73C90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ABB7E8D8C60564765881679 /* WhisperControlMobile */,
+				5A0D485CF525674B3C61B5CC /* WhisperControlMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2788A890BCACBA8CAD8C0CFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9DEA4E095EFFB75ABC98ADE /* Assets.xcassets in Resources */,
+				2647BD637895350D5254D177 /* Config_Info.plist in Resources */,
+				1B5216B442370ECB03D6922B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F135D5D1E83C7EA6D93632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56D3BEF29D3F7F8821E6B547 /* Embed XCTest Harness */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed XCTest Harness";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Placeholder for UI automation packaging\n";
+		};
+		BFA61230383C40EE8607CACB /* Compile CoreML Models */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/App/Models",
+			);
+			name = "Compile CoreML Models";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/App/Models",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -euo pipefail\n\nMODELS_SRC=\"$SRCROOT/App/Models\"\nDEST_ROOT=\"$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/App/Models\"\nTMP_ROOT=\"$DERIVED_FILE_DIR/CompiledCoreMLModels\"\n\nif [ ! -d \"$MODELS_SRC\" ]; then\n  echo \"warning: No models directory at $MODELS_SRC; skipping compilation.\"\n  rm -rf \"$TMP_ROOT\"\n  mkdir -p \"$DEST_ROOT\"\n  exit 0\nfi\n\nrm -rf \"$TMP_ROOT\"\nrm -rf \"$DEST_ROOT\"\nmkdir -p \"$TMP_ROOT\"\nmkdir -p \"$DEST_ROOT\"\n\ncompiled_any=0\n\nwhile IFS= read -r model_dir; do\n  [ -d \"$model_dir\" ] || continue\n  model_name=\"$(basename \"$model_dir\")\"\n  tmp_model_dir=\"$TMP_ROOT/$model_name\"\n  dest_model_dir=\"$DEST_ROOT/$model_name\"\n  rm -rf \"$tmp_model_dir\"\n  rm -rf \"$dest_model_dir\"\n  mkdir -p \"$tmp_model_dir\"\n  mkdir -p \"$dest_model_dir\"\n\n  while IFS= read -r package; do\n    [ -z \"$package\" ] && continue\n    if [ ! -f \"$package/Data/com.apple.CoreML/model.mlmodel\" ]; then\n      echo \"warning: Skipping $(basename \"$package\") for $model_name because model.mlmodel is missing\"\n      continue\n    fi\n    echo \"Compiling $(basename \"$package\") for $model_name\"\n    xcrun coremlcompiler compile \"$package\" \"$tmp_model_dir\"\n    compiled_any=1\n  done < <(find \"$model_dir\" -maxdepth 1 -type d -name '*.mlpackage')\n\n  while IFS= read -r nested_model; do\n    [ -z \"$nested_model\" ] && continue\n    component_dir=\"$(basename $(dirname \"$nested_model\"))\"\n    echo \"Compiling $component_dir (mlmodel) for $model_name\"\n    xcrun coremlcompiler compile \"$nested_model\" \"$tmp_model_dir/$component_dir\"\n    compiled_any=1\n  done < <(find \"$model_dir\" -mindepth 2 -maxdepth 2 -path '*/*.mlmodelc/model.mlmodel')\n\n  while IFS= read -r existing_mlmodelc; do\n    [ -z \"$existing_mlmodelc\" ] && continue\n    rel=\"$(basename \"$existing_mlmodelc\")\"\n    if [ ! -d \"$dest_model_dir/$rel\" ]; then\n      echo \"Using precompiled $rel for $model_name (no source to recompile)\"\n      rsync -a --delete \"$existing_mlmodelc/\" \"$dest_model_dir/$rel/\"\n    fi\n  done < <(find \"$model_dir\" -mindepth 1 -maxdepth 1 -type d -name '*.mlmodelc')\n\n  while IFS= read -r other_dir; do\n    [ -z \"$other_dir\" ] && continue\n    [ \"$other_dir\" = \"$model_dir\" ] && continue\n    rel=\"$(basename \"$other_dir\")\"\n    case \"$rel\" in\n      *.mlpackage|*.mlmodelc) continue ;;\n    esac\n    rsync -a --delete \"$other_dir/\" \"$dest_model_dir/$rel/\"\n  done < <(find \"$model_dir\" -mindepth 1 -maxdepth 1 -type d ! -name '*.mlpackage' ! -name '*.mlmodelc')\n\n  while IFS= read -r other_file; do\n    [ -z \"$other_file\" ] && continue\n    base=\"$(basename \"$other_file\")\"\n    case \"$base\" in\n      *.mlmodel|.DS_Store) continue ;;\n    esac\n    cp \"$other_file\" \"$dest_model_dir/$base\"\n  done < <(find \"$model_dir\" -maxdepth 1 -type f ! -name '*.mlmodel' ! -name '.DS_Store')\n\n  if [ -d \"$tmp_model_dir\" ]; then\n    rsync -a \"$tmp_model_dir/\" \"$dest_model_dir/\"\n  fi\ndone < <(find \"$MODELS_SRC\" -mindepth 1 -maxdepth 1 -type d)\n\nif [ \"$compiled_any\" -eq 0 ]; then\n  echo \"warning: No Core ML source models (.mlmodel/.mlpackage) found in $MODELS_SRC.\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47DBA7AC0AFFB4696A288143 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0279724A50C0CD947DD2DA /* AnalyticsPanel.swift in Sources */,
+				CF9AF1FEC39A1B125FCC9A60 /* AnalyticsTracker.swift in Sources */,
+				A1438ACDFE0FA58B78CADB30 /* AutomationDriver.swift in Sources */,
+				849CA51A44692BB20A0CBCD6 /* AppSettings.swift in Sources */,
+				E1D6A24BBB60FFDCED612156 /* AudioProcessing.swift in Sources */,
+				6AED5AFBF5F210E070D4B8B4 /* AudioRecorder.swift in Sources */,
+				E41C0459C3FEE87594EDA50B /* AudioRecorderView.swift in Sources */,
+				303CB84DF5AC3F3FE20774DB /* ChunkedUploader.swift in Sources */,
+				9C8809247499AD94AAEE92F2 /* Color+Platform.swift in Sources */,
+				469EE68AAEE5CB7372CD3D95 /* DiagnosticsView.swift in Sources */,
+				BC9E45A230FF676A42AF4C0D /* ExportCoordinator.swift in Sources */,
+				E5602CE9971191F5227C3D80 /* ExportService.swift in Sources */,
+				79DB359EEBF34A5E0B80C127 /* HapticGenerator.swift in Sources */,
+				6014593630500DE1789D2625 /* HelpSheet.swift in Sources */,
+				946F21CA6E87E07A2DFB5652 /* JobManager.swift in Sources */,
+				A1A2A3A4A5A60718293A4A5A /* AppleStreamingEngine.swift in Sources */,
+				C1C2C3C4C5C60718293C4C5C /* AudioLiveCapture.swift in Sources */,
+				D1E2F3A4B5C60718293D4E5F /* LiveTranscriptionManager.swift in Sources */,
+				B1B2B3B4B5B60718293B4B5B /* LiveTranscriptionSession.swift in Sources */,
+				F1A2B3C4D5E60718293F4A5C /* StreamingDelegateProxy.swift in Sources */,
+				D1D2D3D4D5D60718293D4D5D /* StreamingEngine.swift in Sources */,
+				EF09342666D2BCDED993C7C2 /* JobModels.swift in Sources */,
+				76E49B64FE5BD10C0107FFBA /* JobStore.swift in Sources */,
+				665E1D16F6A65636BE0C7E90 /* MainTabView.swift in Sources */,
+				8A6F0467306F98F7CFF43F11 /* ModelDownloadManager.swift in Sources */,
+				BCBD303E229F8DC53237DBA7 /* ModelManifest.swift in Sources */,
+				4806C03F5E5742E707804E9A /* NotifyToastManager.swift in Sources */,
+				03E7572B3E8B49DC76B9382A /* OnboardingView.swift in Sources */,
+				C8E2F55C7AF0478E30511E23 /* PrivacySheet.swift in Sources */,
+				88031FE928BB6DA5B8B36997 /* QueueView.swift in Sources */,
+				88031FE928BB6DA5B8B36998 /* LiveTranscriptionView.swift in Sources */,
+				B1C2D3E4F5A60718293B4C5D /* LiveTranscriptionBackend.swift in Sources */,
+				66F7C64220D364057728B1F6 /* SettingsView.swift in Sources */,
+				58919CE6C21E7498CFA73EBD /* StorageManager.swift in Sources */,
+				D2AEEF5F5B2EF9D43FDBD4A5 /* TranscriptDetailView.swift in Sources */,
+				829AAFE69CC10BC03AF9BE8A /* TranscriptionEngine.swift in Sources */,
+				648200E2BE11196E181C10CE /* UIApplication+TopController.swift in Sources */,
+				7389CB200210A610919FDF85 /* WhisperControlMobileApp.swift in Sources */,
+				A1A1A1A1A1A1A1A1A1A1A1A2 /* AudioPlaybackService.swift in Sources */,
+				AA55BB66CC77DD88EE99FF00 /* ReplayKitCaptureService.swift in Sources */,
+				C0FFEEC0DE00FACEBEEF0001 /* CaptureStatusCenter.swift in Sources */,
+				D0A0B0C0D0E0F00123456780 /* AppGroupConstants.swift in Sources */,
+				D0A0B0C0D0E0F00123456781 /* BroadcastTranscriptStore.swift in Sources */,
+				D0A0B0C0D0E0F00123456782 /* BroadcastLiveTranscriptView.swift in Sources */,
+				D0A0B0C0D0E0F00123456783 /* LocalRAGService.swift in Sources */,
+				D0A0B0C0D0E0F00123456784 /* DatabaseManagementView.swift in Sources */,
+				D0A0B0C0D0E0F00123456785 /* AeruRAGAdapter.swift in Sources */,
+				A988D80EC7763469E8B0E1F9 /* AeruRAGModel.swift in Sources */,
+				A424E42927AFD469C81B4DC4 /* AeruDocumentProcessorNew.swift in Sources */,
+				A424E42927AFD469C81B4DC5 /* EnhancedDocumentProcessor.swift in Sources */,
+				A80728D14284C407A98E88E6 /* ContextWindowManager.swift in Sources */,
+				AD3E616E27FEE4DF4967A46A /* AeruLLMIntegration.swift in Sources */,
+				D0A0B0C0D0E0F00123456786 /* DocumentProcessor.swift in Sources */,
+				D0A0B0C0D0E0F00123456787 /* RAGStatsView.swift in Sources */,
+				D0A0B0C0D0E0F00123456788 /* AeruView.swift in Sources */,
+				D0A0B0C0D0E0F00123456789 /* ChatSidebar.swift in Sources */,
+				D0A0B0C0D0E0F00123456790 /* DynamicLogoView.swift in Sources */,
+				D0A0B0C0D0E0F00123456791 /* VoiceConversationView.swift in Sources */,
+				D0A0B0C0D0E0F00123456793 /* ChatMessage.swift in Sources */,
+				D0A0B0C0D0E0F00123456794 /* ChatSession.swift in Sources */,
+				D0A0B0C0D0E0F00123456795 /* NetworkConnectivity.swift in Sources */,
+				D0A0B0C0D0E0F00123456796 /* SpeechRecognitionManager.swift in Sources */,
+				D0A0B0C0D0E0F00123456797 /* TextToSpeechManager.swift in Sources */,
+				D0A0B0C0D0E0F00123456798 /* WebSearchService.swift in Sources */,
+				D0A0B0C0D0E0F00123456799 /* AppColorScheme.swift in Sources */,
+				D0A0B0C0D0E0F00123456801 /* APIServiceManager.swift in Sources */,
+				D0A0B0C0D0E0F00123456802 /* APISettingsView.swift in Sources */,
+				D0A0B0C0D0E0F00123456803 /* RAGDatabaseManager.swift in Sources */,
+				D0A0B0C0D0E0F00123456804 /* RAGManagementView.swift in Sources */,
+				D0A0B0C0D0E0F00123456805 /* DatabaseManager.swift in Sources */,
+				D0A0B0C0D0E0F00123456806 /* RAGModel.swift in Sources */,
+				AEAEBE01C0DECAFE00000002 /* AeruContainerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0FB9194800E440241FC8FB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34B90497B54E5ACAE95994CF /* AnalyticsTrackerTests.swift in Sources */,
+				21E4897CC2A541CFB3693B01 /* AnalyticsPanel.swift in Sources */,
+				FA9C2736984E484CB5FD35CC /* AnalyticsTracker.swift in Sources */,
+				03F2CC3EAFBB72518B7E5A6B /* AutomationDriver.swift in Sources */,
+				6BC401E3504E4C7F9F912C73 /* AppSettings.swift in Sources */,
+				25034F64A1BC41458CFCC862 /* AudioProcessing.swift in Sources */,
+				9EB18E396F404BE78C2D4EBA /* AudioRecorder.swift in Sources */,
+				1D051E09E92E4EDA8C96C15E /* AudioRecorderView.swift in Sources */,
+				D567DE10B24B41C499311B55 /* ChunkedUploader.swift in Sources */,
+				245CB9BFBEF0432F92FE0A5D /* Color+Platform.swift in Sources */,
+				96244738433A401D801A08B3 /* DiagnosticsView.swift in Sources */,
+				41BC144FB96A4649AD76B5AB /* ExportCoordinator.swift in Sources */,
+				D5FDBFCCBCB54FD89C06482B /* ExportService.swift in Sources */,
+				625BB39809E743CC84A4D9D3 /* HapticGenerator.swift in Sources */,
+				A687136997634F51B7F2B0ED /* HelpSheet.swift in Sources */,
+				8A9F225B611842D89B8CEBD5 /* JobManager.swift in Sources */,
+				A1A2A3A4A5A60718293A4A5B /* AppleStreamingEngine.swift in Sources */,
+				C1C2C3C4C5C60718293C4C5D /* AudioLiveCapture.swift in Sources */,
+				D1E2F3A4B5C60718293D4E60 /* LiveTranscriptionManager.swift in Sources */,
+				B1B2B3B4B5B60718293B4B5C /* LiveTranscriptionSession.swift in Sources */,
+				F1A2B3C4D5E60718293F4A5B /* StreamingDelegateProxy.swift in Sources */,
+				D1D2D3D4D5D60718293D4D5E /* StreamingEngine.swift in Sources */,
+				BA4F77B47411446CBA5EDF13 /* JobModels.swift in Sources */,
+				A495F88CB7FE4AE6B0C0B66D /* JobStore.swift in Sources */,
+				35C6D12B30F24F6EA2A3C598 /* MainTabView.swift in Sources */,
+				93248C8FE6794E39909B2B2A /* ModelDownloadManager.swift in Sources */,
+				EB59B3BCA9814D12AE0C6A82 /* ModelManifest.swift in Sources */,
+				15F04843F40A47198BC9D9CC /* NotifyToastManager.swift in Sources */,
+				E4A3B920A5964CC58772ECCE /* OnboardingView.swift in Sources */,
+				F7F3A4B9651343DDAB321B60 /* PrivacySheet.swift in Sources */,
+				92EF80C37A374D0AB9DA922F /* QueueView.swift in Sources */,
+				B1C2D3E4F5A60718293B4C5E /* LiveTranscriptionBackend.swift in Sources */,
+				0C03191780C74EDF89E8F366 /* SettingsView.swift in Sources */,
+				165393D73CC94FD3AC12F2D7 /* StorageManager.swift in Sources */,
+				1C0104E1D276450B81E752F6 /* TranscriptDetailView.swift in Sources */,
+				5F02733FA0A54E7EBEE0AB03 /* TranscriptionEngine.swift in Sources */,
+				B0D93BA18C784AA6B691796A /* UIApplication+TopController.swift in Sources */,
+				E13015D3D69A91F30ED394E5 /* ExportServiceTests.swift in Sources */,
+				D49A85380EF641B45A0AEB39 /* JobManagerTests.swift in Sources */,
+				0681EED5CFB95BA59EFB8BDC /* WhisperControlMobileTests.swift in Sources */,
+				A1A1A1A1A1A1A1A1A1A1A1A3 /* AudioPlaybackService.swift in Sources */,
+				AA55BB66CC77DD88EE99FF01 /* ReplayKitCaptureService.swift in Sources */,
+				C0FFEEC0DE00FACEBEEF0002 /* CaptureStatusCenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071483FAF8B232D5E6A3024C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WhisperControlMobile;
+			target = 8ABB7E8D8C60564765881679 /* WhisperControlMobile */;
+			targetProxy = 923B078093A429022E86CA79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1C5154281601B5645EBBBF08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = WhisperControlMobile.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		22C5D15B22E9BE34ADCAA96C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				DEVELOPMENT_TEAM = JA6967Z8P6;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephhennig.whispercontrolmobile.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		3BF6C4E5D4A795CF5A10CE55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = WhisperControlMobile.entitlements;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		65B2F56130FD362C2754A3CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JA6967Z8P6;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephhennig.whispercontrolmobile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9256433633F683902D4E567 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				DEVELOPMENT_TEAM = JA6967Z8P6;
+				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephhennig.whispercontrolmobile.tests;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C981654891820443E917C957 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = JA6967Z8P6;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josephhennig.whispercontrolmobile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8EB28BC825BE803BB97EF0CD /* Build configuration list for PBXNativeTarget "WhisperControlMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C981654891820443E917C957 /* Debug */,
+				65B2F56130FD362C2754A3CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C11AE7089343479DD32230C6 /* Build configuration list for PBXProject "WhisperControlMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C5154281601B5645EBBBF08 /* Debug */,
+				3BF6C4E5D4A795CF5A10CE55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF1D2F206D18CD82FDA3EDB6 /* Build configuration list for PBXNativeTarget "WhisperControlMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C5D15B22E9BE34ADCAA96C /* Debug */,
+				B9256433633F683902D4E567 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2A870DED1A99FB858794B5C0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+		2D2FA6ECEF21BC284F76B8DC /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+		AA11BB22CC33DD44EE55FF66 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.4;
+			};
+		};
+		AA11BB22CC33DD44EE55FF67 /* XCRemoteSwiftPackageReference "SVDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Dripfarm/SVDB.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		AA11BB22CC33DD44EE55FF72 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		AA11BB22CC33DD44EE55FF73 /* XCRemoteSwiftPackageReference "MarkdownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gonzalezreal/MarkdownUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		B69E6901BBE2A77EBED6BF0E /* XCRemoteSwiftPackageReference "WhisperKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/WhisperKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0D2FAD875C119812D0C7F90F /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A870DED1A99FB858794B5C0 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		947D737D5FB0965049B1CB95 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D2FA6ECEF21BC284F76B8DC /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		AA11BB22CC33DD44EE55FF68 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA11BB22CC33DD44EE55FF66 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+		AA11BB22CC33DD44EE55FF69 /* SVDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA11BB22CC33DD44EE55FF67 /* XCRemoteSwiftPackageReference "SVDB" */;
+			productName = SVDB;
+		};
+		AA11BB22CC33DD44EE55FF70 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA11BB22CC33DD44EE55FF72 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		AA11BB22CC33DD44EE55FF71 /* MarkdownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA11BB22CC33DD44EE55FF73 /* XCRemoteSwiftPackageReference "MarkdownUI" */;
+			productName = MarkdownUI;
+		};
+		B719392F38670E38CBBFC661 /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B69E6901BBE2A77EBED6BF0E /* XCRemoteSwiftPackageReference "WhisperKit" */;
+			productName = WhisperKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4CA84A72D873440071B0E62A /* Project object */;
+}
