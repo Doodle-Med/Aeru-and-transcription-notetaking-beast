@@ -18,6 +18,8 @@ DerivedData/
 *.xccheckout
 *.xcworkspace
 !default.xcworkspace
+# Allow Package.resolved for SPM dependency locking
+!**/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 
 # CocoaPods
 Pods/
